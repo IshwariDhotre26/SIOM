@@ -1,0 +1,472 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>REGISTER</title>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous">
+</script>
+
+   
+<style>
+* {
+ margin: 0;
+padding: 0;
+}
+html{
+overflow-y: scroll;
+scroll-behavior: smooth;
+}
+
+body{
+background-color: rgb(246, 248, 248);
+line-height: 1.6;
+height: 100vh;
+}
+
+
+.navbar{
+position: fixed;
+top: 0;
+z-index: 0;
+display: flex;
+width: 100%;
+height: 71px;
+background: rgba(0,0,0,0.9);
+}
+
+.navbar ul{
+ display: flex;
+ list-style-type: none;
+ width: 100%;
+ overflow: hidden;
+ justfy-content: center;
+}
+
+.navbar ul li {
+  margin: 1 1rem;
+  padding: 1rem;
+  
+}
+
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+
+}
+
+.navbar ul li a:hover {
+  background-color: skyblue;
+  opacity: 0.9;
+}
+
+
+
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: skyblue;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ .header {
+  margin-top:20px;
+  background-color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.header h1{
+  color: #3BB16F;
+}
+
+.header h3{
+  color: #0143B4;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: #3C96CB;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+.container img{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+input[type=submit]:hover {
+  background-color: skyblue;
+}
+
+
+.container {
+ 
+  border-radius: 5px;
+  background-color: #F4D661;
+  padding: 0px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 3px;
+  padding: 10px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+.footer {
+  text-align: center;
+  padding: 50px;
+  background: #242424;
+  margin-top: 0px;
+}
+.footer p{
+   color: white;
+  font-size: 1rem; 
+   font-style: italic;
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<nav class="navbar">
+  <img src="Website/Screenshot%20(54).jpg" width="150" height="70">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <ul>
+      <li><a href="SIOM.html#home">HOME</a></li>
+      <li><a a target="_self" href="explore.html">REGISTER</a></li>
+      <li class="dropdown">
+       <a href="about.html" class="dropbtn">ABOUT US</a>
+        <div class="dropdown-content">
+        <a href="about.html">CORE TEAM</a>
+        <a href="about.html">ABOUT SIOM</a>
+        </div>
+       </li>
+       <li class="dropdown">
+        <a href="SIOM.html#trainingareas" class="dropbtn">TRAINING AREAS</a>
+        <div class="dropdown-content">
+        <a href="#trainingareas">ADVENTURE COURSES</a>
+        <a href="#trainingareas">TREKS AND HIKES</a>
+        <a href="#trainingareas">MOUNTAINEERING EXPEDITIONS</a>
+        <a href="#trainingareas">TREKS IN SAHYADRI</a>
+        </div>
+       </li>
+      <li><a href="SIOM.html#contactus">CONTACT US</a></li>
+     </ul>
+      
+   </nav>
+
+<div class="header">
+  
+  <h3><br><br>&nbsp;&nbsp;&nbsp;&nbsp;To get all the informations related to Nisarganad treks fill the following form to become a member of the club!</h3>
+</div>
+
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Registration Form</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://image3.mouthshut.com/images/Restaurant/Photo/-33300_135109.jpg" style="width:100%">
+    </div>
+    <div class="column">
+        <form id="registration_form" method="post"   action="explore.html">
+          <div>
+          <label>First Name :</label>
+         	<input type="text" id="form_fname" name="firstname" placeholder="Enter your name.." required="required">
+          <span class="error_form" id="fname_error_message"></span>
+          </div>
+          <div>
+        <label>Last Name :</label>
+        	<input type="text" id="form_sname" name="lastname" placeholder="Enter your last name.." required="required">
+          <span class="error_form" id="sname_error_message"></span>
+        </div>
+        <div>
+        <label>Gender :</label><br>
+       		<input type="radio" id="Male" name="gender" required="required"><span id="Male">&nbsp;Male</span>&nbsp;&nbsp;
+        	<input type="radio" id="Female" name="gender" required="required"><span id="Female">&nbsp;Female</span>&nbsp;&nbsp;<br><br>
+          
+        </div>
+        <div>
+        <label>Email :</label>
+        	<input type="text" id="form_email" name="email" placeholder="Email address" required="required" >
+          <span class="error_form" id="email_error_message"></span>
+        </div>
+        <div>
+        <label>Phone No.:</label>
+        	<input type="text" id="phoneno" name="phoneno" placeholder="Mobile no" required="required">
+          <span class="error_form" id="phoneno_error_message"></span>
+        </div>
+        <div>
+        <label>Password :</label>
+        	<input type="password" id="form_password" name="password" placeholder="Enter password" required="required" >
+          <span class="error_form" id="password_error_message"></span>
+        </div>
+        <div>
+        <label>Re-Enter Password :</label>
+        	<input type="password" id="form_retype_password" name="cpassword" placeholder="Re-enter your password" required="required">
+          <span class="error_form" id="retype_password_error_message"></span>
+        </div>
+        <input type="submit" value="Register">
+        </form>
+     
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function() {
+
+     $("#fname_error_message").hide();
+     $("#sname_error_message").hide();
+     $("#email_error_message").hide();
+     $("#phoneno_error_message").hide();
+     $("#password_error_message").hide();
+     $("#retype_password_error_message").hide();
+     
+     
+     
+
+     var error_fname = false;
+     var error_sname = false;
+     var error_email = false;
+     var error_phoneno = false;
+     var error_password = false;
+     var error_retype_password = false;
+
+     $("#form_fname").focusout(function(){
+        check_fname();
+     });
+     $("#form_sname").focusout(function() {
+        check_sname();
+     });
+     $("#form_email").focusout(function() {
+        check_email();
+     });
+
+     $("#phoneno").focusout(function(){
+        check_phoneno();
+     });
+     
+     $("#form_password").focusout(function() {
+        check_password();
+     });
+     $("#form_retype_password").focusout(function() {
+        check_retype_password();
+     });
+
+     function check_fname() {
+        var pattern = /^[a-zA-Z]*$/;
+        var fname = $("#form_fname").val();
+        if (pattern.test(fname) && fname !== '') {
+           $("#fname_error_message").hide();
+           $("#form_fname").css("border-bottom","2px solid #34F458");
+        } else {
+           $("#fname_error_message").html("Should contain only Characters").css("color","#FF0000");
+           $("#fname_error_message").show();
+           $("#form_fname").css("border-bottom","2px solid #F90A0A");
+           error_fname = true;
+        }
+     }
+
+     function check_sname() {
+        var pattern = /^[a-zA-Z]*$/;
+        var sname = $("#form_sname").val()
+        if (pattern.test(sname) && sname !== '') {
+           $("#sname_error_message").hide();
+           $("#form_sname").css("border-bottom","2px solid #34F458");
+        } else {
+           $("#sname_error_message").html("Should contain only Characters").css("color","#FF0000");
+           $("#sname_error_message").show();
+           $("#form_sname").css("border-bottom","2px solid #F90A0A");
+           error_fname = true;
+        }
+     }
+
+     function check_password() {
+        var password_length = $("#form_password").val().length;
+        var password = $("#form_password").val()
+        var pattern = /^[a-zA-z0-9]{6,15}$/;
+        if (password_length < 8 && pattern.test(password)) {
+           $("#password_error_message").html("Atleast 8 Characters").css("color","#FF0000");
+           $("#password_error_message").show();
+           $("#form_password").css("border-bottom","2px solid #F90A0A");
+           error_password = true;
+        } else {
+           $("#password_error_message").hide();
+           $("#form_password").css("border-bottom","2px solid #34F458");
+        }
+     }
+
+     function check_retype_password() {
+        var password = $("#form_password").val();
+        var retype_password = $("#form_retype_password").val();
+        if (password !== retype_password) {
+           $("#retype_password_error_message").html("Passwords Did not Matched").css("color","#FF0000");
+           $("#retype_password_error_message").show();
+           $("#form_retype_password").css("border-bottom","2px solid #F90A0A");
+           error_retype_password = true;
+        } else {
+           $("#retype_password_error_message").hide();
+           $("#form_retype_password").css("border-bottom","2px solid #34F458");
+        }
+     }
+
+     function check_email() {
+        var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        var email = $("#form_email").val();
+        if (pattern.test(email) && email !== '') {
+           $("#email_error_message").hide();
+           $("#form_email").css("border-bottom","2px solid #34F458");
+        } else {
+           $("#email_error_message").html("Invalid Email").css("color","#FF0000");
+           $("#email_error_message").show();
+           $("#form_email").css("border-bottom","2px solid #F90A0A");
+           error_email = true;
+        }
+     }
+
+
+     function check_phoneno(){
+      var pattern =/^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+      var phoneno = $("#phoneno").val();
+      if(pattern.test(phoneno) && phoneno !==''){
+        $("#phoneno_error_message").hide();
+        $("#phoneno").css("border-bottom","2px solid #34F458");
+        }
+        else {
+        $("#phoneno_error_message").html("Invalid Phone no").css("color","#FF0000");
+        $("#phoneno_error_message").show();
+        $("#phoneno").css("border-bottom","2px solid #F90A0A");
+        error_phoneno = true;
+        }
+
+     }
+
+     $("#registration_form").submit(function() {
+        error_fname = false;
+        error_sname = false;
+        error_email = false;
+        error_password = false;
+        error_retype_password = false;
+
+        check_fname();
+        check_sname();
+        check_email();
+        check_password();
+        check_retype_password();
+
+        if (error_fname === false && error_sname === false && error_email === false && error_password === false && error_retype_password === false) {
+           alert("Registration Successfull");
+           return true;
+        } else {
+           alert("Please Fill the form Correctly");
+           return false;
+        }
+
+
+     });
+  });
+</script>
+
+
+
+   <div class="footer">
+  <p>Copyright © 2017-18 All Right Reserved, www.Sahyadrigroup.in
+<br>Maintained by siom & Designed  by Ishwari</p>
+   </div>
+  
+
+</body>
+</html>
